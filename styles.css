@@ -1,0 +1,597 @@
+body {
+  font-family: sans-serif;
+  padding:0px;
+  margin:0px;
+}
+a { color:white; text-decoration: none; } /* Globally */
+
+/* Each state */
+
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:white }
+#navAndWelcome {
+  display:flex;
+  flex-direction:column;
+  margin-top:0px;
+}
+#navbar {
+  position:fixed;
+  right:5px;
+  /*background-image:linear-gradient(#262626,black);*/
+  width:100%;
+  color:white;
+  margin-bottom:0px;
+}
+#navbar-list {
+  display:flex;
+  justify-content:flex-end;
+  flex-wrap:nowrap;
+  margin-right:20px;
+  margin-top:5px;
+  margin-bottom:0px;
+}
+.navbar-list-item {
+  padding:5px;
+  display: inline;
+  margin-right:12px;
+  margin-top:15px;
+  margin-bottom:15px;
+  font-size:1.5em;
+}
+#welcome-section {
+  margin-top:0px;
+  color:white;
+  background: linear-gradient(145deg, rgb(3, 148, 108) 20.71%, rgb(38, 38, 38) 100.00%);
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height:100vh;
+}
+#pictureDiv {
+  height:100px;
+  width:100px;
+  margin-left:50px;
+  margin-bottom:30px;
+  margin-top:150px;
+}
+#picture {
+ height:100%;
+ width:100%;
+ border-radius:100px;
+}
+#introTextDiv {
+  margin:20px;
+  margin-left:50px;
+  margin-top:0px;
+  font-size:25px;
+  width:60%;
+  margin-bottom:20%;
+}
+#techStack {
+  background-image:linear-gradient(#262626,black);
+  display:flex;
+  justify-content:flex-end;
+  flex-wrap:nowrap;
+  color:white;
+  margin-bottom:0px;
+}
+#techStackTextDiv {
+  margin-top:100px;
+  margin-right:110px;
+  margin-left:30px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+#techStackText1 {
+  margin-bottom:0px;
+  font-size:60px;
+}
+#techStackText2 {
+  margin-top:0px;
+  font-size:60px;
+}
+#techStackGridDiv {
+  display:flex;
+  justify-content:flex-end;
+  margin:30px;
+}
+#techStackGrid {
+  height:500px;
+  width:500px;
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows:repeat(4, 1fr);
+  grid-gap:20px;
+  padding:20px;
+  border-radius: 15px;
+}
+  .gridItem {
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*background:linear-gradient( white, cyan);*/ 
+    border-radius:15px;
+  }
+.techText {
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:rgb(0,0,0,0);
+}
+.techImg {
+    border-radius:15px;
+    height:90%;
+    width:90%;
+  }
+#infoGraphDiv {
+  margin-top:100px;
+  display:flex;
+  flex-direction:column;
+  margin-right:15%;
+  margin-bottom:150px;
+}
+#infoGraph {
+  display:flex;
+  justify-content:flex-start;
+}
+.infoGraphText {
+  font-size:20px;
+  margin-right:25px;
+}
+#basic {
+  color:cyan;
+}
+#intermediate {
+  color:orange;
+}
+#toLearn {
+  color:magenta;
+}
+#projects {
+  width:100%;
+  background: linear-gradient(26deg, rgb(59, 55, 106) 23.69%, rgb(0, 143, 186) 97.57%);
+  margin-top:0px;
+  margin-bottom:0px;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+#h1-projects {
+  margin-top:30px;
+  margin-left:40px;
+  font-size:55px;
+}
+.h2-projects {
+  margin-top:30px;
+  margin-left:40px;
+  font-size:30px;
+}
+.h4-projects {
+  margin-left:40px;
+}
+.project {
+  margin-left:50px;
+  margin-right:50px;
+  display:flex;
+  margin-bottom:30px;
+  margin-top:30px;
+  background-image:linear-gradient(#262626,black);
+  border-radius:20px;
+  padding:30px;
+  box-shadow: 3px 3px 10px black;
+}
+.projectPreview {
+}
+.stackAndDescr {
+  margin-left:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start
+}
+.projStack {
+  display:flex;
+  justify-content:flex-start;
+  margin-bottom:10px;
+}
+.projDescr {
+  color:white;
+}
+.pageImg {
+  height:200px;
+  width:200px;
+  border-radius:10px;
+}
+.stackImg {
+  height:40px;
+  width:40px;
+  box-shadow: 2px 2px 5px black;
+  margin-right:10px;
+  border-radius:5px;
+}
+.projRedirect {
+  background-color:#0094B2;
+  border-radius:15px;
+  color:white;
+}
+.redirectTxt {
+  margin-top:3px;
+  margin-bottom:3px;
+  margin-left:5px;
+  margin-right:5px;
+}
+#contact {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color:white;
+  background:linear-gradient(rgb(59, 55, 106),#AE0029);
+  height:95vh;
+  color:white;
+}
+#contact-h2 {
+  margin-top:40vh;
+  font-size:100px;
+}
+#contactButtonsDiv {
+  display:flex;
+  justify-content: space-evenly;
+  width:100%;
+  font-size:40px;
+  margin-top:150px;
+}
+#footerBar {
+  background-color:white;
+  width:100%;
+  height:5px;
+}
+#footer {
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  background-color:#AE0029;
+  width:100%;
+  height:5vh;
+  color:white;
+}
+#bottomText {
+  margin-top:10px;
+  margin-right:30px;
+}
+@media (max-width:1650px) {
+  #contactButtonsDiv {
+  display:flex;
+  flex-direction:column;
+  width:60%;
+  font-size:40px;
+  align-items:center;
+  margin-top:10px;
+}
+  .contBtn {
+    margin-top:3px;
+    margin-bottom:3px;
+  }
+}
+#contact-h2 {
+    margin-top: 25vh;
+    margin-bottom:0px;
+  font-size:60px;
+  }
+@media (max-width:1200px){
+  #contactButtonsDiv {
+  margin-top:10px;
+  display:flex;
+  flex-direction:column;
+  width:60%;
+  font-size:20px;
+  align-items:center;
+  margin-top:10px;
+}
+  #contact-h2 {
+    margin-top: 30vh;
+    margin-bottom: 0px;
+  }
+  #h1-projects {
+  margin-top:30px;
+  margin-left:25px;
+  font-size:55px;
+}
+.h2-projects {
+  margin-top:30px;
+  margin-left:25px;
+  font-size:30px;
+}
+  .project {
+    width:90%;
+    margin-left:10px;
+  }
+  .pageImg {
+  height:100px;
+  width:100px;
+  border-radius:10px;
+}
+.stackImg {
+  height:20px;
+  width:20px;
+  box-shadow: 2px 2px 5px black;
+  margin-right:10px;
+  border-radius:5px;
+}
+  .projRedirect {
+  background-color:#0094B2;
+  border-radius:15px;
+  color:white;
+  margin-right:10px;
+}
+.redirectTxt {
+  margin-left:2px;
+  margin-right:2px;
+}
+  #navbar {
+  width:100%;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+  #navbar-list {
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size:15px;
+  }
+   .navbar-list-item {
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:0px;
+    margin-right:1px;
+  }
+  #techStackTextDiv {
+    margin-left:30px;
+    font-size:30px;
+  }
+  #techStack {
+  background-color:#B9AAF7;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+  #infoGraphDiv {
+  margin-top:2px;
+  display:flex;
+  flex-direction:column;
+  margin-right:10px;
+  margin-left:30px;
+  margin-bottom:150px;
+}
+  #infoGraph {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  margin-top:20px;
+  margin-left:40px;
+}
+.infoGraphText {
+  margin-top:3px;
+  margin-bottom:3px;
+  font-size:20px;
+}
+  #techStackGrid {
+  height:400px;
+  width:400px;
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows:repeat(4, 1fr);
+  grid-gap:10px;
+  padding:5px;
+  border-radius: 15px;
+}
+  .gridItem {
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:white;
+    border-radius:15px;
+  }
+  .techImg {
+    border-radius:15px;
+    height:80%;
+    width:80%;
+  }
+  #pictureDiv {
+  height:100px;
+  width:100px;
+  margin-left:30px;
+  margin-bottom:0px;
+  margin-top:60px;
+}
+#introTextDiv {
+  margin:20px;
+  margin-left:30px;
+  margin-top:0px;
+  font-size:25px;
+  width:60%;
+  margin-bottom:20%;
+}
+}
+@media (max-width:800px){
+  #mail-link {
+    font-size:15px;
+  }
+    #welcome-section {
+  height:160vh;
+}
+  #pictureDiv {
+  height:75px;
+  width:75px;
+  margin-left:50px;
+  margin-bottom:0px;
+  margin-top:70px;
+}
+#picture {
+ height:100%;
+ width:100%;
+ border-radius:100px;
+}
+#introTextDiv {
+  margin:20px;
+  margin-left:50px;
+  margin-top:0px;
+  font-size:23px;
+  width:60%;
+  margin-bottom:20%;
+}
+  #contact-h2 {
+  margin-top:20vh;
+  font-size:40px;
+  margin-bottom:10px;
+  }
+    #contactButtonsDiv {
+  display:flex;
+  flex-direction:column;
+  width:60%;
+  font-size:20px;
+  align-items:center;
+}
+  #techStackGrid {
+  height:300px;
+  width:300px;
+}
+    #navbar-list {
+    justify-content:center;
+    font-size:11px;
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+  .navbar-list-item {
+   margin-top:0px;
+   margin-bottom:0px;
+   margin-right:2px;
+  }
+}
+@media (max-width:380px) {
+  #bottomText {
+  margin-right:30px;
+  font-size:10px;
+}
+    #pictureDiv {
+  height:40px;
+  width:40px;
+  margin-left:60px;
+  margin-bottom:0px;
+  margin-top:50px;
+}
+#picture {
+ height:100%;
+ width:100%;
+ border-radius:100px;
+}
+#introTextDiv {
+  margin:20px;
+  margin-left:50px;
+  margin-top:0px;
+  font-size:19px;
+  width:60%;
+  margin-bottom:20%;
+}
+    #contact-h2 {
+  margin-top:15vh;
+  font-size:25px;
+  margin-bottom:5px;
+      
+  }  #contactButtonsDiv {
+  margin-top:10px;
+  display:flex;
+  flex-direction:column;
+  width:60%;
+  font-size:15px;
+  align-items:center;
+    margin-top:0px;
+}
+      #navbar-list {
+    font-size:8px;
+    margin-right:25px;
+  }
+  .navbar-list-item {
+   margin-top:0px;
+   margin-bottom:0px;
+   margin-left:0px;
+   margin-right:2px;
+  }
+    #techStackGrid {
+  height:200px;
+  width:200px;
+}
+}
+#htmlDiv {
+  background-image:linear-gradient(white,orange);
+}
+#cssDiv {
+  background-image:linear-gradient(white,orange);
+}
+#jsDiv {
+  background-image:linear-gradient(white,orange);
+}
+#reactjsDiv {
+  background-image:linear-gradient(white,cyan);
+}
+#pythonDiv {
+  background-image:linear-gradient(white,orange);
+}
+#javaDiv {
+  background-image:linear-gradient(white,cyan);
+}
+#vbDiv {
+  background-image:linear-gradient(white,cyan);
+}
+#jqueryDiv {
+  background-image:linear-gradient(white,cyan);
+}
+#nodejsDiv {
+  background-image:linear-gradient(white,magenta);
+}
+#nodejs {
+  filter:grayscale(100%);
+}
+#sqlDiv {
+  background-image:linear-gradient(white,orange);
+}
+#phpDiv {
+  background-image:linear-gradient(white,magenta);
+}
+#php {
+  filter:grayscale(100%);
+}
+#cplusplusDiv {
+  background-image:linear-gradient(white,magenta);
+}
+#cplusplus {
+  filter:grayscale(100%);
+}
+#angularDiv {
+  background-image:linear-gradient(white,magenta);
+}
+#angular {
+  filter:grayscale(100%);
+}
+#rubyDiv {
+  background-image:linear-gradient(white,magenta);
+}
+#ruby {
+  filter:grayscale(100%);
+}
+#gitDiv {
+  background-image:linear-gradient(white,cyan);
+}
+#reduxDiv {
+  background-image:linear-gradient(white,cyan);
+}
