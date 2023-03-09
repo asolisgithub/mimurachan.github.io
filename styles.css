@@ -557,25 +557,22 @@ a:hover, a:active { text-decoration: none; color:white }
   background-image:linear-gradient(white,cyan);
 }
 #nodejsDiv {
-  background-image:linear-gradient(white,magenta);
+  background-image:linear-gradient(white,cyan);
 }
 #nodejs {
-  filter:grayscale(100%);
 }
 #sqlDiv {
   background-image:linear-gradient(white,orange);
 }
 #phpDiv {
-  background-image:linear-gradient(white,magenta);
+  background-image:linear-gradient(white,cyan);
 }
 #php {
-  filter:grayscale(100%);
 }
 #cplusplusDiv {
-  background-image:linear-gradient(white,magenta);
+  background-image:linear-gradient(white,cyan);
 }
 #cplusplus {
-  filter:grayscale(100%);
 }
 #angularDiv {
   background-image:linear-gradient(white,magenta);
